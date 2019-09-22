@@ -1,0 +1,23 @@
+{
+	"name": "mireiawen/translation",
+	"description": "Sets up the text translation domain and other settings for gettext translations",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mira Manninen",
+			"email": "mir@mireiawen.net"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=7.3.0",
+		"ext-gettext": "*",
+		"ext-intl": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Mireiawen\\Translation\\": "includes/"
+		}
+	}
+}
