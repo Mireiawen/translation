@@ -55,7 +55,7 @@ class Translation
 		
 		// Validate the translation path
 		$translations = \realpath($path);
-		if (!\is_dir($translations) || (!\is_readable($translations)))
+		if (!\is_string($translations) || !\is_dir($translations) || (!\is_readable($translations)))
 		{
 			throw new \Exception(\sprintf(\_('The translation path %s does not exist or is not readable'), $path));
 		}
